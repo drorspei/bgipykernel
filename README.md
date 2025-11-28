@@ -12,27 +12,21 @@ if you can't find your config file, run `ipython profile locate`.
 
 ## features
 
-Move running cells to the background by running `%bg`
+- Move running cells to the background by running `%bg`
+- List background cells using `%jobs`
+- Kill them using `%kill`
 
--
+https://github.com/user-attachments/assets/3d46fe32-dc1b-4876-8317-1721b5d683cb
 
-Kill background cells using `%kill`
+- Run multiple cells with `await` concurrently
 
--
-
-See what cells are running in the background using `%jobs`
-
--
-
-Run multiple cells with `await` concurrently
-
--
+https://github.com/user-attachments/assets/b6ebdabd-9e84-45d4-8f0e-8b56e49eee41
 
 ## available configurations
 
 * If you just want to use `await` in multiple cells concurrently, use `bgipykernel.NoAsyncLockIPythonKernel`
-* If you just want `%bg, use `bgipykernel.BgIPythonKernel`
-* If oyu want both, use `bgipykernel.NoAsyncLockBgIPythonKernel`
+* If you just want `%bg`, use `bgipykernel.BgIPythonKernel`
+* If you want both, use `bgipykernel.NoAsyncLockBgIPythonKernel`
 
 ## trouble
 
